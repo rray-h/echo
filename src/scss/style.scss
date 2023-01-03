@@ -1,0 +1,42 @@
+// Imports other styles
+@import "fonts";
+@import "nullstyle";
+@import "header";
+@import "main";
+@import "footer";
+// ---------------------
+
+body {
+    padding: 0 15px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    background-color: #0B0B0B;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+
+
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
