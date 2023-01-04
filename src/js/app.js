@@ -10,6 +10,13 @@ const span = document.getElementById('span')
 const span2 = document.getElementById('span2')
 const span3 = document.getElementById('span3')
 
+const btn = document.getElementById('btn');
+const cookies = document.getElementById('cookies');
+
+btn.addEventListener('click', function() {
+    cookies.classList.add('hide')
+})
+
 burger.addEventListener('click', function() {
     menu1.classList.toggle('block')
     menu2.classList.toggle('block')

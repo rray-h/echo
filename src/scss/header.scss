@@ -1,5 +1,12 @@
 :root {
     --white: #fff;
+    --cookies: #282828;
+    --btn-bg: #FFFF02;
+}
+
+// -----Header-----------------------------
+.header {
+    padding: 0 15px;
 }
 
 .header__body {
@@ -95,3 +102,36 @@
         transform: rotate(-45deg);
     }
 }
+
+// -----/Header-----------------------------
+
+// -----Cookies-----------------------------
+
+.hide {
+    display: none;
+}
+
+.cookies {
+    position: relative;
+    background-color: var(--cookies);
+}
+
+.cookies__body {
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookies__warning {
+    color: var(--white);
+}
+
+.cookies__btn {
+    background-color: var(--btn-bg);
+    padding: 6px 30px;
+    border-radius: 20px;
+}
+
+// -----/Cookies-----------------------------
+
+
