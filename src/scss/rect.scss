@@ -1,0 +1,117 @@
+:root {
+    --bg-exp: #4A00FF;
+    --bg-exc: #00FF9D;
+    --bg-sup: #FF8B00;
+    --color-font: #fff;
+    --bg-btn: #000;
+}
+
+.rect__container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.rect__body {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1210px) {
+        gap: 57px;
+    }
+}
+
+.rect__exp {
+    display: flex;
+    color: var(--color-font);
+
+    :nth-child(1) {
+        background-color: var(--bg-exp);
+    }
+
+    @media (max-width: 1210px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 57px;
+        :nth-child(1) {
+            order: 2;
+        }
+    
+    }
+}
+
+.rect__exc {
+    display: flex;
+    color: var(--color-font);
+    justify-content: space-around;
+    gap: 190px;
+
+    :nth-child(1) {
+        background-color: var(--bg-exc);
+        order: 2;
+    }
+
+    @media (max-width: 1210px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 57px;
+    }
+}
+
+.rect__sup {
+    display: flex;
+    color: var(--color-font);
+
+    :nth-child(1) {
+        background-color: var(--bg-sup);
+    }
+
+    @media (max-width: 1210px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 57px;
+        :nth-child(1) {
+            order: 2;
+        }
+
+    }
+}
+
+
+
+.rect__block {
+    padding: clamp(6.25rem, 3.508rem + 13.71vw, 13.875rem) clamp(3.125rem, 1.732rem + 6.97vw, 7rem);
+    width: 640px;
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 792px) {
+        width: 420px;
+    }
+
+    @media (max-width: 480px) {
+        width: 320px;
+    }
+}
+
+.rect__title {
+    font-size: clamp(1.563rem, 1.248rem + 1.57vw, 2.438rem);
+    line-height: calc(44/clamp(1.563rem, 1.248rem + 1.57vw, 2.438rem));
+}
+
+.rect__btn {
+    color: inherit;
+    background-color: var(--bg-btn);
+    padding: 6px 28px;
+    border-radius: 25px;
+}
+
+.rect__block-title {
+    margin-left: clamp(2.5rem, 2.118rem + 1.91vw, 3.563rem);
+    font-size: clamp(4.375rem, 3.476rem + 4.49vw, 6.875rem);
+    line-height: calc(154/clamp(4.375rem, 3.476rem + 4.49vw, 6.875rem));
+    display: flex;
+    align-items: center;
+}
+
