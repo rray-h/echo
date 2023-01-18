@@ -1,9 +1,9 @@
 .headrect {
-    padding: 125px 0;
+    padding: 125px 15px;
     background-image: url('../img/headrect.png');
 }
 
 .headrect__title {
-    font-size: 115px;
+    font-size: clamp(4.688rem, 3.789rem + 4.49vw, 7.188rem);
     color: #fff;
 }
